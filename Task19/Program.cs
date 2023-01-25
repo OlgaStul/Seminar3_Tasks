@@ -29,5 +29,6 @@ int pointBx = GetNumber("Введите координату X точки B: ");
 int pointBy = GetNumber("Введите координату X точки B: ");
 
 double DistanceBetweenPoints = Math.Sqrt(Math.Pow((pointBx - pointAx), 2) + Math.Pow((pointBy - pointAy), 2));
+DistanceBetweenPoints = Math.Round(DistanceBetweenPoints, 2);
 
 Console.WriteLine($"Расстояние между точками А ({pointAx}, {pointAy}) и В ({pointBx}, {pointBy}) равно {DistanceBetweenPoints})");
